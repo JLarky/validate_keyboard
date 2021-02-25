@@ -27,6 +27,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "fmt": "prettier --write '**/*.{ts,js,tsx,jsx,css,json,md,prettierrc,html,yml}'",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
