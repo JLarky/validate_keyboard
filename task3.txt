@@ -1,0 +1,37 @@
+# Transactions:
+# sender, receiver, timestamp, amount
+
+
+# example rule:
+# Flag everyone who transacted more than 2 million dollars in the past 24 hours.
+
+
+# db table
+# user, timestamp, amount, isIncoming
+
+
+# temp table: transaction_day1
+# user, day_amount
+
+
+# tr1
+# tr2
+# tr3
+# tr4
+# tr5
+
+
+
+# filter by timestamp for 24 hours
+
+# (select user as 'user', sum(amount) as '24_sum' from transactions where timestamp > 'yestreday' group by user)
+
+
+# select user, 24_sum from (select user as 'user', sum(amount) as 'sum' from transactions where timestamp > 'yestreday' group by user) where 24_sum > 2,000,000 order by 24_sum;
+
+
+# select user, sum(amount) from transactions where timestamp > 'yestreday' group by user order by sum(amount);
+
+# result
+# user, amount
+
