@@ -1,0 +1,7 @@
+.flag-info {
+  visibility: hidden;
+}
+
+.flag:hover .flag-info {
+  visibility: visible;
+}
